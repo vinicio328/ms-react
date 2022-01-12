@@ -1,7 +1,7 @@
 import './index.css'
 import React from 'react';
 import RecipeTitle from './RecipeTitle';
-// TODO: Import IngredientList
+import IngredientList from './IngredientList';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             <h1>Recipe Manager</h1>
             <RecipeTitle title={ recipe.title } feedback={ recipe.feedback }></RecipeTitle>  
 
-            {/* TODO: Add IngredientList component */}
+            <IngredientList ingredients={recipe.ingredients}></IngredientList>
 
         </article>
     )
