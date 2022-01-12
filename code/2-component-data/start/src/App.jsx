@@ -23,7 +23,7 @@ function App() {
     return (
         <article>
             <h1>Recipe Manager</h1>
-            <RecipeTitle title={ recipe.title }></RecipeTitle>  
+            <RecipeTitle title={ recipe.title } feedback={ recipe.feedback }></RecipeTitle>  
 
             {/* TODO: Add IngredientList component */}
 
