@@ -6,7 +6,7 @@ function IngredientList(props) {
         return (
             <li key={index} 
                 className={ ingredient.prepared ? 'prepared' : '' }
-                // TODO: Add onClick event
+                onClick={ ()=> props.onClick(index) }
                 
             >
                 { ingredient.name }
